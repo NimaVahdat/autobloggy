@@ -125,7 +125,7 @@ For each batch, spawn a sub-agent with the prompt below. **Launch all batches in
 
 Use this prompt verbatim, substituting the placeholders:
 
-```
+```text
 You are analysing frames extracted from a video file.
 
 VIDEO: {filename}

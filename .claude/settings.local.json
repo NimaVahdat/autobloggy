@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python *)"
+      "Bash(python *)",
+      "Bash(uv run *)",
+      "Bash(git stash *)",
+      "Bash(npx skills *)",
+      "Bash(cp -r /Users/balmasi/Projects/autobloggy/.agents/skills/autobloggy-discovery/ /tmp/autobloggy-discovery-backup/)",
+      "Bash(cp /tmp/autobloggy-discovery-backup/SKILL.md /Users/balmasi/Projects/autobloggy/skills/autobloggy-discovery/SKILL.md)",
+      "Bash(cp /tmp/autobloggy-discovery-backup/agents/openai.yaml /Users/balmasi/Projects/autobloggy/skills/autobloggy-discovery/agents/openai.yaml)"
     ]
   }
 }

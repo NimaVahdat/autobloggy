@@ -5,7 +5,9 @@ description: Tighten Autobloggy draft prose without changing the post thesis. Us
 
 # Autobloggy Copy Edit
 
-Use this skill for late-stage draft improvement after the structure and claims are already mostly sound.
+Use this skill only for late-stage draft improvement after the structure is already mostly sound.
+
+`program.md` or `autobloggy-draft-loop` should invoke this skill only when the active task is narrow prose tightening.
 
 ## Goals
 
@@ -16,21 +18,21 @@ Use this skill for late-stage draft improvement after the structure and claims a
 
 ## Workflow
 
-1. Read `program.md` and the current `draft.qmd`.
-2. Identify the smallest scope that improves the active task.
-3. Edit only `draft.qmd` unless the task explicitly requires `claims.yaml`.
-4. Preserve citekeys and supported claims.
+1. Read `program.md`, the current `strategy.md`, and the current `draft.qmd`.
+2. If the strategy frontmatter records preset files, read the active preset's `writing_guide.md` and `brand_guide.md` before editing.
+3. Treat the preset guides and strategy as read-only context. The draft is the only editable artifact in the loop.
+4. Identify the smallest scope that improves the active task.
+5. Edit only `draft.qmd`.
 
 ## Anti-AI Cleanup
 
 - Remove phrases that sound canned, managerial, or inflated.
 - Cut empty intensifiers.
 - Prefer direct nouns and verbs over abstractions.
-- Keep prose plain enough that a verifier can point to evidence easily.
+- Keep prose plain enough that a verifier can point to concrete draft language easily.
 
 ## Do Not
 
-- Introduce new sources.
 - Change the thesis of the post.
-- Add claims that are not backed by `sources.yaml`.
-
+- Add new unsupported assertions.
+- Edit `program.md`, preset files, `strategy.md`, or `outline.md`.
